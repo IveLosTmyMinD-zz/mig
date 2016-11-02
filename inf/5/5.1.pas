@@ -1,40 +1,17 @@
-var x, y, y1, y2: real;
-
+var a, x,y,z:integer;
 begin
-writeln('Enter x, y:');
-readln(x, y);
-y1 := x;
-y2 := 1/x;
-//Upper area
-if (x>0) and (y>y2) then
-	begin
-		if (y<y1) then
-			writeln('2')
-		else
-			writeln('3');
-	end
-//Lower area
+readln(a);
+x:=a div 100;
+y:=(a div 10)mod 10;
+z:=a mod 10;
+if y=1 then
+  writeln(a, ' рублей')
 else
-	if (x<0) and (y<y2) then
-		begin
-			if (y<y1) then
-				writeln('6')
-			else
-				writeln('5');
-		end
-//Middle area
-else
-	if(y>y1) then
-		writeln('4')
-	else
-		if (y<y1) then
-			writeln('1')
-//Crosses
-else
-	if (y=y1) then
-		writeln('y is crossing y = x')
-	else
-		if(y=y2) then
-			writeln('y is crossing y = 1/x');
-readln();
+  if z=1 then
+    writeln(a, ' рубль')
+  else
+    if (z>=2)and(z<=4) then
+      writeln(a, ' рубля')
+    else
+      writeln(a, ' рублей');
 end.
