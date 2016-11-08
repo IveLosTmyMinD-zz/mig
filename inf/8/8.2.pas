@@ -9,5 +9,5 @@ for i:=m to n do
       s:=s*i;
       m:=m+1;
   end;
-  writeln(s);
+writeln(s);
 end.
