@@ -10,4 +10,5 @@ for i:=m to n do
       m:=m+1;
       writeln(s);
   end;
+writeln(s);
 end.
