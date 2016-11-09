@@ -10,7 +10,7 @@ while x<= b do
   begin
     n:=n+1;
     y:=x*x;
-    writeln(n, x, y);
+    writeln(n,' ', x,' ', y);
     x:=x+h;
   end;
 end.
