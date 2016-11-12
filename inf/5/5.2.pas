@@ -8,7 +8,6 @@ m:=(a div 1000)mod 10;
 x:=(a div 100)mod 10;
 y:=(a div 10)mod 10;
 z:=a mod 10;
-writeln(k, l, m, x, y, z);
 if y=1 then
   r:='рублей'
 else
