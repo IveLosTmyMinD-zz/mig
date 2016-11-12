@@ -18,7 +18,7 @@ else
       r:='рубля'
     else
       r:='рублей';
-if (m>=5)and(m<=9)or(l=1) then
+if (m>=5)and(m<=9)or(l=1)or((l=0)and(m=0)) then
   t:='тысяч '
 else
   if(m>=2)and(m<=4) then
@@ -26,5 +26,6 @@ else
   else
     if m=1 then
       t:='тысяча ';
+
 writeln(k,l,m,' ',t,x,y,z,' ',r)
 end.
