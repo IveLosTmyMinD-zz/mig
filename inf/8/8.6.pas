@@ -1,18 +1,16 @@
-var x,c,z,a,s:real;
-i,n:integer;
+var x,s,c,z,a:real;
+i, n:integer;
 begin
 readln(x);
 readln(n);
-c:=x;
+s:=1;
 z:=1;
-a:=c/z;
-s:=a;
-for i:=1 to n do
-	begin
-		c:=c*c;
-		z:=z*(z+1);
-		a:=c/z;
-		s:=a;
-	end;
+  for i:=1 to n do
+    begin
+      c:=power(x,i);
+      z:=z*i;
+      a:=c/z;
+      s:=s+a;
+    end;
 writeln(s);
 end.
