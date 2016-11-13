@@ -7,6 +7,6 @@ readln(c);
 if (a-b)*exp(a-b)+c+1 <> 0 then //Исключение нуля в знаменателе
 r:=((a+b)/(abs(a)+abs(b))+(1+a-b)/(1+abs(a)-abs(b)))/((a-b)*exp(a-b)+c+1)//Решение
 else
-writeln('her');//Если ноль в знаменателе, то выведет это
+writeln('0 v znamenatele');//Если ноль в знаменателе, то выведет это
 writeln(r);
 end.
