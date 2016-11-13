@@ -6,6 +6,7 @@ writeln('Задайте интервал значений');
 readln(b, c);
   for i:=1 to 10 do
     begin
+    writeln('Vvedite ', i,' element massiva');
       readln(a[i]);
         if (a[i] >= b) and (a[i] <= c) then
           begin
