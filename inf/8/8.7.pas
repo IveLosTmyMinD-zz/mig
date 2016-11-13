@@ -10,7 +10,7 @@ s:=a;
   for i:=1 to n do
     begin
       c:=(-1)*(power(x, 2*i));
-      z:=(2*i)*z;
+      z:= (2*i-1)*(2*i)*z;
       a:=c/z;
       s:=s+a;
     end;
