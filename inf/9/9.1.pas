@@ -1,6 +1,6 @@
 var t:array [1..24] of integer;
 s, srt:real;
-i, n:integer;
+i:integer;
 begin
   s:=0;
     for i:=1 to 24 do
