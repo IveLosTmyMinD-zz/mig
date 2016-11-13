@@ -14,7 +14,5 @@ s:=a;
       a:=c/z;
       s:=s+a;
     end;
-writeln(c);
-writeln(z);
 writeln(s);
 end.
