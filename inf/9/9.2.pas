@@ -3,6 +3,7 @@ i, n, k, s:integer;
 begin
   for i:=1 to 10 do
     begin
+    writeln('Vvedite ', i,' element massiva');
       readln(a[i]);
        if a[i] < 0 then
           begin
