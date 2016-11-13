@@ -5,6 +5,7 @@ begin
   s:=0;
     for i:=1 to 24 do
       begin
+        writeln('Vvedite ', i,' element massiva');
         readln(t[i]);
         s:=s+t[i];
       end;
