@@ -1,4 +1,4 @@
-var a, x,y,z,k,l,m:integer;
+var a, x,y,z,k,l,m,ts,s:integer;
 t, r:string;
 begin
 readln(a);
@@ -26,6 +26,12 @@ else
   else
     if m=1 then
       t:='тысяча ';
+      ts:=a div 1000;
+s:=a mod 1000;
+if ts = 0 then
+  writeln(s,' ',r)
+  else
+  
 
-writeln(k,l,m,' ',t,x,y,z,' ',r)
+writeln(ts,' ',t,s,' ',r)
 end.
