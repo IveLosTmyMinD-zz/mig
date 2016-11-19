@@ -1,16 +1,24 @@
-var a:array [1..10] of integer;
-i, n, k, s, c,b:integer;
+var
+  a: array [1..123456789] of integer;
+i, n, k, s, c, b: integer;
+
+
 begin
 s:=0;
-  for i:=1 to 10 do
-    begin
-    writeln('Vvedite ', i,' element massiva');
+writeln('Введите количество элементов массива:');
+readln(n);
+for i:=1 to n do begin 
+writeln('Введите ', i, ' элемент массива');
+      readln(a[i]);
+  begin
+    writeln('Введите ', i, ' элемент массива');
       readln(a[i]);
         if a[i] > s then 
           begin
-            s:=a[i];
+            s := a[i];
           end;
     end;
-writeln('Max = ',s);
+    end;
+writeln('Максимальное значение = ', s);
+readln;
 end.
-       
