@@ -17,9 +17,12 @@ begin
     end;
     n := n div 10;
   end;
+  if k = 0 then
+  s:=0;
   
   writeln('Proizvedenie ', s);
   writeln('Koli4estvo ', k);
+  
   
   readln;
 end.
