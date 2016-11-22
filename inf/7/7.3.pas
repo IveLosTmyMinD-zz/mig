@@ -1,12 +1,15 @@
-var a:integer;
+var
+  a: integer;
+
+
 begin
-readln(a);
-if a < 30000 then
+  writeln('Введите a:');
+  readln(a);
   while a > 0 do
-    begin
-      write(a mod 10);
-    a:= a div 10;
-    end
-else
-  writeln(a, '>=30000');
+  
+  begin
+    write(a mod 10);
+    a := a div 10;
+  end;
+  readln;
 end.
